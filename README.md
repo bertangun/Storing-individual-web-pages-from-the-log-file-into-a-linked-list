@@ -20,11 +20,11 @@ This program 	stores individual web pages from the log file into a linked list a
            This function displays the first  most visited 10 web pages.duprem and sorter functions have been executed in this function.It has no parameter.
            
      Source.cpp :
-It contains list.h,the main function and deleteChar function.
-In the main , it creates list object , opens the access_log  file and calculates the execution time .With the strlen function , the length of the access_log file will be equalized to n.Then ,
-With the for loop , it finds the string that is between GET and HTTP.Then ,this string value  will be assigned to temp string.After that , nodegen function will be called.Lastly , display function will be called.
-     deleteChar(ifstream &in) :
-     The access_log file encodes with UNICODE , but  Visual Studio deals with ASCII code. So,this function reads this type of file and ,deletes the first three characters.
-This is the screenshot of output(release) ; 
+          It contains list.h,the main function and deleteChar function.
+          In the main , it creates list object , opens the access_log  file and calculates the execution time .With the strlen function , the length of the access_log file will be equalized to n.Then ,
+          With the for loop , it finds the string that is between GET and HTTP.Then ,this string value  will be assigned to temp string.After that , nodegen function will be called.Lastly , display function will be called.
+         deleteChar(ifstream &in) :
+            The access_log file encodes with UNICODE , but  Visual Studio deals with ASCII code. So,this function reads this type of file and ,deletes the first three characters.
+            This is the screenshot of output(release) ; 
  
-NOTE : The execution time is approximately 26 seconds.The duprem function takes more than 20(more) seconds alone.We have worked to optimize our code.But , linked list  is too slow comparing to binary search or open hashing.We think our code has one of the fastest execution time between the other codes that implement the linked list.We have not used any extra library .
+            NOTE : The execution time is approximately 26 seconds.The duprem function takes more than 20(more) seconds alone.We have worked to optimize our code.But ,linked list is too slow comparing to binary search or open hashing.We think our code has one of the fastest execution time between the other codes that implement the linked list.We have not used any extra library.
